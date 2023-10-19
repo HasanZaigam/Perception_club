@@ -188,8 +188,6 @@ main{
     background-color:#002d3c;
     width:fit-content;
     height: fit-content;
-    
-    
 }
 
 .label h1{
@@ -205,20 +203,48 @@ main{
 }
 
 .info_card_1,
+.info_card_3{
+    border-color: #013843;
+    position: relative;
+    display:inline-grid;
+    grid-template-columns: 45% 50%;
+    text-align: center;
+    align-items: center;
+    padding:35px 55px 60px;
+    gap:55px;
+    /* margin-top: 5rem; */
+    /* line-height: 30px; */
+    /*    */
+}
+
 .info_card_2,
-.info_card_3,
 .info_card_4{
     border-color: #013843;
     position: relative;
     display:inline-grid;
-    grid-template-columns: 50% 40%;
+    grid-template-columns: 55% 45%;
     text-align: center;
     align-items: center;
     padding:35px 55px 60px;
-    gap:95px;
-    /* margin-top: 5rem; */
-    line-height: normal;
-    
+    gap:55px;
+}
+
+.info_card_1 h3,
+.info_card_2 h3,
+.info_card_3 h3,
+.info_card_4 h3{
+    font-weight: lighter;
+    font-family: sans-serif;
+    color:white
+}
+
+.info_card_1 h1,
+.info_card_2 h1,
+.info_card_3 h1,
+.info_card_4 h1{
+    text-decoration: underline;
+    color: #dfb82b;
+    font-size: 30px;
 }
 
 .info_card_1 img,
@@ -227,7 +253,7 @@ main{
     grid-row:1/2;
     /* height:100%; */
     width:80%;
-    height: 300px;
+    height: 350px;
 }
 
 .info_card_2 img,
@@ -235,8 +261,8 @@ main{
     grid-column: 2/2;
     grid-row:1/2;
     /* height:100%; */
-    width:90%;
-    height: 300px;
+    width:80%;
+    height: 350px;
 }
 
 .notice_board{
@@ -497,16 +523,19 @@ font-weight: 400;
     text-align: center;
     border-radius: 10px 0px 0px 10px;
     border: 1px black solid;
+    font-size: 20px;
 }
 
 .input button{
-    height: 55px;
+    height: fit-content;
     width: fit-content;
-    padding:20px;
+    padding:0.95rem;
     align-items: center;
     border-radius: 0px 10px 10px 0px;
     border: 1px black solid;
     background-color:  #002d3c;
+    color: white;
+    font-size: 20px;
 }
 
 footer{
@@ -563,10 +592,11 @@ footer{
 
 .footer_foot{
     text-align: center;
-    color: #002d3c;
+    color: white;
     padding: 2%;
     font-family: Dangrek;
     font-size: 20px;
+    cursor: pointer;
 }
 
 
